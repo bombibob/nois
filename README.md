@@ -31,11 +31,14 @@ Your Node Name
 Port prefix
 
 173
-# Clone project repository
+
+**Clone project repository**
+```
 cd && rm -rf noisd
 git clone https://github.com/noislabs/noisd
 cd noisd
 git checkout v1.0.5
+```
 
 # Build binary
 make install
