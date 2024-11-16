@@ -40,8 +40,10 @@ cd noisd
 git checkout v1.0.5
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.noisd/cosmovisor/genesis/bin
