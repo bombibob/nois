@@ -45,9 +45,11 @@ git checkout v1.0.5
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.noisd/cosmovisor/genesis/bin
 ln -s $HOME/.noisd/cosmovisor/genesis $HOME/.noisd/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which noisd) $HOME/.noisd/cosmovisor/genesis/bin
