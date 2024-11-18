@@ -51,8 +51,10 @@ mkdir -p $HOME/.noisd/cosmovisor/genesis/bin
 ln -s $HOME/.noisd/cosmovisor/genesis $HOME/.noisd/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which noisd) $HOME/.noisd/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 noisd config chain-id nois-1
