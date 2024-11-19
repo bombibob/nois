@@ -56,10 +56,12 @@ ln -s $HOME/.noisd/cosmovisor/genesis $HOME/.noisd/cosmovisor/current -f
 cp $(which noisd) $HOME/.noisd/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 noisd config chain-id nois-1
 noisd config keyring-backend file
 noisd config node tcp://localhost:17357
+```
 
 # Initialize the node
 noisd init "Your Node Name" --chain-id nois-1
