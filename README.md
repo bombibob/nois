@@ -63,8 +63,10 @@ noisd config keyring-backend file
 noisd config node tcp://localhost:17357
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 noisd init "Your Node Name" --chain-id nois-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/nois/genesis.json > $HOME/.noisd/config/genesis.json
