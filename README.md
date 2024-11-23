@@ -79,8 +79,10 @@ curl -L https://snapshots.nodejumper.io/nois/addrbook.json > $HOME/.noisd/config
 sed -i -e 's|^seeds *=.*|seeds = "b3e3bd436ee34c39055a4c9946a02feec232988c@seeds.cros-nest.com:56656,babc3f3f7804933265ec9c40ad94f4da8e9e0017@seed.rhinostake.com:17356,ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:17356,72cd4222818d25da5206092c3efc2c0dd0ec34fe@161.97.96.91:36656,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:17356,c8db99691545545402a1c45fa897f3cb1a05aea6@nois-mainnet-seed.itrocket.net:36656,1de5c83c5a5eb223c814401f0506b44b742741da@nois.peer.stavr.tech:40136,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656"|' $HOME/.noisd/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.05unois"|' $HOME/.noisd/config/app.toml
+```
 
 # Set pruning
 sed -i \
