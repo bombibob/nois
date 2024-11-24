@@ -84,12 +84,14 @@ sed -i -e 's|^seeds *=.*|seeds = "b3e3bd436ee34c39055a4c9946a02feec232988c@seeds
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.05unois"|' $HOME/.noisd/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.noisd/config/app.toml
+```
 
 # Enable prometheus
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.noisd/config/config.toml
