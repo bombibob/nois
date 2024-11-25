@@ -93,8 +93,10 @@ sed -i \
   $HOME/.noisd/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.noisd/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:17317%; s%:8080%:17380%; s%:9090%:17390%; s%:9091%:17391%; s%:8545%:17345%; s%:8546%:17346%; s%:6065%:17365%" $HOME/.noisd/config/app.toml
