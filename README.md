@@ -98,9 +98,11 @@ sed -i \
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.noisd/config/config.toml
 ```
 
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:17317%; s%:8080%:17380%; s%:9090%:17390%; s%:9091%:17391%; s%:8545%:17345%; s%:8546%:17346%; s%:6065%:17365%" $HOME/.noisd/config/app.toml
 sed -i -e "s%:26658%:17358%; s%:26657%:17357%; s%:6060%:17360%; s%:26656%:17356%; s%:26660%:17361%" $HOME/.noisd/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots.nodejumper.io/nois/nois_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.noisd"
