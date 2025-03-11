@@ -217,3 +217,4 @@ sudo hostnamectl set-hostname YOUR_SERVERNAME
 
 Add project overview
 Add feature summary
+Add system requirements
