@@ -219,3 +219,4 @@ Add project overview
 Add feature summary
 Add system requirements
 Add setup instructions
+Add quick start guide
