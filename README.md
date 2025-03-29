@@ -223,3 +223,4 @@ Add quick start guide
 Document data ingestion process
 Add visualization examples
 Add performance tuning tips
+Add API reference
