@@ -226,3 +226,4 @@ Add performance tuning tips
 Add API reference
 Add troubleshooting section
 Add contributing guidelines
+Add code of conduct
