@@ -229,3 +229,4 @@ Add contributing guidelines
 Add code of conduct
 Add FAQ for users
 Add community resources
+Finalize README content
